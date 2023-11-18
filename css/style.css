@@ -1,0 +1,92 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.title-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MAIN */
+.main-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+}
+
+.review {
+    flex-basis: 60%;
+    flex-grow: 0;
+}
+
+.review img{
+    border-radius: 5px;
+}
+
+.review p {
+    text-align: center;
+}
+
+.contact-us {
+    flex-basis: 40%;
+    flex-grow: 0;
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 5px;
+    width: 260px;
+    padding: 0 30px 30px;
+    box-sizing: border-box;
+}
+
+.contact-us h5 {
+    margin-bottom: -15px;
+}
+
+.contact-us h6 {
+    word-wrap: break-word;
+    width: 180px;
+    margin-bottom: 50px;
+}
+
+.contact-us input[type=text], input[type=email], select {
+    width: 115%;
+    padding: 12px 0;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.contact-us label {
+    font-size: small;
+}
+
+.contact-us input[type=button] {
+    width: 115%;
+    background-color: #081526;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
