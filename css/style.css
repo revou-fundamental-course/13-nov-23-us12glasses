@@ -2,6 +2,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: rgb(11, 36, 71);
+    color: white;
+}
+
 /* HEADER */
 .nav-head {
     display: flex;
@@ -16,7 +21,16 @@
 }
 
 .nav a {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
     text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: rgb(91, 143, 185);
+    transition: ease-in-out 0.6s;
 }
 
 .title-head {
@@ -38,10 +52,33 @@
 .review {
     display: flex;
     flex-direction: column;
+    float: left;
 }
+
+#slider {
+    position: relative;
+}
+
+#slider img:first-child {
+    opacity: 1;
+ }
 
 .review img{
     border-radius: 5px;
+}
+
+.images {
+    
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s eas;
 }
 
 .comment {
@@ -57,6 +94,7 @@
 
 .review-icon {
     margin-left: 55px;
+    filter: invert(93%) sepia(0%) saturate(30%) hue-rotate(118deg) brightness(106%) contrast(106%);
 }
 
 .review-user-info {
@@ -76,10 +114,11 @@
 .user-stat {
     margin-top: -20px;
     margin-left: 30px;
+    font-size: small;
 }
 
 .contact-us {
-    background-color: rgba(0, 255, 255, 0.5);
+    background-color: rgba(91, 143, 185, 0.5);
     border-radius: 5px;
     width: 260px;
     padding: 0 30px 30px;
@@ -110,7 +149,7 @@
     font-size: small;
 }
 
-.contact-us input[type=button] {
+.contact-us input[type=submit] {
     width: 115%;
     background-color: #081526;
     color: white;
@@ -120,8 +159,139 @@
     cursor: pointer;
 }
 
+.invalid {
+    margin-top: -10px;
+    font-size: 0.8em;
+    color: red;
+    font-weight: 600;
+    display: none;
+  }
+
 .details {
     display: flex;
     flex-direction: column;
-    margin: 0 290px;
+    margin: 0 300px;
+    background-color: rgba(91, 143, 185, 0.5);
+    border-radius: 5px;
+}
+
+.details h2 {
+    text-align: center;
+}
+
+.details h5 {
+    margin-bottom: -15px;
+}
+
+.details h5, p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.package-section {
+    margin: 0 300px;
+}
+
+.package-section h2 {
+    text-align: center;
+}
+
+.list-package {
+    display: flex;
+    justify-content: space-around;
+}
+
+.packages {
+    width: 250px;
+    height: 140px;
+    border: 1px solid white;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.packages span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.packages p {
+    margin: 15px;
+}
+
+.closing-section {
+    margin: 80px 300px 100px;
+    text-align: center;
+}
+
+.closing-section h2 {
+    text-align: center;
+}
+
+.closing-fill p {
+    text-align: center;
+}
+
+.closing-section input[type=button] {
+    width: 200px;
+    background-color: #081526;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    margin: 0 300px;
+    text-align: center;
+}
+
+.footer-link {
+    text-align: center;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+}
+
+.footer-link a:visited {
+    text-transform: none;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-us {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .review {
+        width: 100%;
+    }
+    .title-head {
+        padding: 0 5vw 0 5vw;
+    }
+    .details {
+        width: 100%;
+    }
+    .package-section {
+        max-width: 90vw;
+    }
+    footer {
+        width: 80vw;
+        margin-left: 5vw;
+    }
+}
+@media screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+    gap: 20px;
+  }
+    body{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
 }

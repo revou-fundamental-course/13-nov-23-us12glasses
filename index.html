@@ -9,11 +9,11 @@
 <body>
     <header>
         <section class="nav-head">
-            <a href="">Logo</a>
+            HeyGo Travel
             <nav class="nav">
-                <a href="">Home</a>
-                <a href="">Our Package</a>
-                <a href="">Call Us</a>
+                <a href="#top-main">Home</a>
+                <a href="#section-package">Our Package</a>
+                <a href="#call">Call Us</a>
             </nav>
         </section>
         <section class="title-head">
@@ -22,22 +22,27 @@
         </section>
     </header>
     <main>
-        <section class="main-top">
-            <section class="review">
-                <img src="assets/autumn-tokyo.jpg" alt="mountain">
+        <section id="top-main" class="main-top">
+            <section id="slider" class="review">
+                <img class="images" src="assets/autumn-tokyo.jpg" alt="sakura">
+                <img class="images" src="assets/jap1.jpg" alt="village">
+                <img class="images" src="assets/jap2.jpg" alt="gate">
+                <img class="images" src="assets/jap3.jpg" alt="mountain">
+                <img class="images" src="assets/jap4.jpg" alt="city">
+                <img class="images" src="assets/jap5.jpg" alt="village">
                 <p class="comment"><i>"Liburan jadi menyenangkan bersama Travel Agentku"</i></p>
-                <section class="review-user">
+                <!--<section class="review-user">
                     <img src="assets/person.svg" alt="user" class="review-icon">
                     <section class="review-user-info">
                         <p class="user-name">Florence Hughes</p>
                         <p class="user-stat"><i>Ibu Rumah Tangga, 28</i></p>
                     </section>
-                </section>
+                </section>-->
             </section>
             <section class="contact-us">
                 <h5>Contact Us</h5>
                 <h6>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h6>
-                <form action="" class="form-input">
+                <form method="post" action="" class="form-input">
                     <table>
                         <tr>
                             <td>
@@ -47,6 +52,7 @@
                         <tr>
                             <td>
                                 <input type="text" name="name" id="nameId" placeholder="First and last name">
+                                <span class="invalid" id="invalidNama">Mohon masukkan nama</span>
                             </td>
                         </tr>
                         <tr>
@@ -57,6 +63,7 @@
                         <tr>
                             <td>
                                 <input type="email" name="email" id="emailId" placeholder="example@email.com">
+                                <span class="invalid" id="invalidEmail">Mohon masukkan email yang benar</span>
                             </td>
                         </tr>
                         <tr>
@@ -72,11 +79,12 @@
                                     <option value="lake">Lake</option>
                                     <option value="forest">Forest</option>
                                 </select>
+                                <span class="invalid" id="invalidTertarik">Mohon pilih satu</span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="button" value="SEND" class="btn-send">
+                                <input type="submit" value="SEND" class="btn-send">
                             </td>
                         </tr>
                     </table>
@@ -84,12 +92,57 @@
             </section>
         </section>
         <section class="details">
-            <h3>Take advantage of the gorgeous views and comfortable weather, visiting traditional gardens, expansive parks, and the nearby mountains</h3>
-            <p>As November draws to a close, the foliage turns enchanting shades of red and yellow, and Tokyo's parks and gardens attract hordes of visitors in search of the perfect autumn scene. For traditional views, you can't beat Tokyo's gardens. Viewing the crimson trees and reflective ponds at Rikugien Gardens and Koishikawa Korakuen Gardens, you'll feel as though you've been transported back to Japan's feudal past.</p>
-            <p>Autumn is also a perfect time for picnics and outdoor recreation. Within the city, you'll find numerous parks with ample space to relax or play. Alternatively, to really take advantage of the season, consider a day trip to one of the nearby mountains, which offer easy hikes and rewarding scenic views.</p>
-            <h4>The best traditional gardens for autumn foliage</h4>
-            <p>Arguably the most popular autumn destination is the Rikugien Gardens, a traditional garden immaculately tailored to provide the most serene views. The best time to see the autumn leaves here is late November to early December. For additional Edo-period views, head to Koishikawa Korakuen Gardens, Ninomaru Garden (at the Imperial Palace), or the Hama-riyku Gardens.</p>
+            <h2>Features</h2>
+            <h5>Backpacker like</h5>
+            <p>If you like to make your travel fun on your own, then this coice is yours. You got to become a backpacker, but you have us as your connection to lodging, food corner, etc.</p>
+            <h5>Tour guide</h5>
+            <p>Kinda same like the backpacker package except you got tour guide and planning. Just follow along and feel the joy.</p>
         </section>
+        <section id="section-package" class="package-section">
+            <h2>Our Package</h2>
+            <section class="list-package">
+                <section class="packages">
+                    <span>Tokyo</span>
+                    <p>Travel and tourism in Tokyo. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+                <section class="packages">
+                    <span>Okinawa</span>
+                    <p>Travel and tourism in Okinawa. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+                <section class="packages">
+                    <span>Sapporo</span>
+                    <p>Travel and tourism in Sapporo. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+            </section>
+            <section class="list-package">
+                <section class="packages">
+                    <span>Yokohama</span>
+                    <p>Travel and tourism in Yokohama. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+                <section class="packages">
+                    <span>Kyoto</span>
+                    <p>Travel and tourism in Kyoto. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+                <section class="packages">
+                    <span>Osaka</span>
+                    <p>Travel and tourism in Osaka. Visit interesting cultural and culinary heritage sites.</p>
+                </section>
+            </section>
+        </section>
+        <section id="call" class="closing-section">
+            <h2 class="closing-title">Your Closing Argument Headline</h2>
+            <section class="closing-fill">
+              <p>We need to use the urn to drink. Until the urn is not,Euismod but just
+                who,<br />conallis tincidunt risus. The ship was either cold or
+                frigid.</p>
+            </section>
+            <input type="button" onclick="window.location.href='#top-main';" value="Call to Action" class="btn-send">
+        </section>
+        <footer>
+            <p class="footer-link"><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+            <p>&copy; 2023 Muhammad Faiqul Ghozi</p>
+        </footer>
+        <script src="js/script.js"></script>
     </main>
 </body>
 </html>
